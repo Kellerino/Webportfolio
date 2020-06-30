@@ -12,7 +12,7 @@ def contact(request):
 
     if request.method == "POST":
         message_name = request.POST["message-name"]
-        message_email = request.POST["message-email"]
+        message_email = "anton.keller98@hotmail.de"
         message = request.POST["message"]
 
         #send an Email
@@ -20,7 +20,7 @@ def contact(request):
             message_name, # subject
             message, # message
             message_email, # from Email
-            ["akellerdesign@zohomail.eu"], # To Email
+            ["antonk@akellerdesign.de"], # To Email
             fail_silently=False,
         )
 
