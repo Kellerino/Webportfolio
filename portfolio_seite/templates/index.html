@@ -1,0 +1,264 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!--css links-->
+  <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+  <meta charset="utf-8">
+  <title>Anton Keller</title>
+  <link rel="icon" href="{% static "img/logo.png" %}">
+
+  <!--animate.css and scrolling-->
+  <link type="text/css" rel="stylesheet" href="{% static 'css/animate.css' %}">
+  <script src="{% static "js/wow.min.js" %}"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <!--googlefonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Lekton&display=swap" rel="stylesheet">
+
+  <!--Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!--responsive Meta-Tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!--Javascipt import + jQuery, popper.js und Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!--------------- navbar starts here --------------->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #ffff">
+      <a class="navlogo navbar-brand" href="#">
+        <a href="{% url "index" %}"><img src="{% static "img/logo.png" %}" width="70px" height="70px" class="animated fadeIn" alt="Logo"></a>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse w-100 order-3 dual-collapse-2" id="navbarNav">
+        <ul class="navbar-nav ml-auto animated fadeIn">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url "about" %}">ÜBER MICH</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url "contact" %}">KONTAKT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--------------- navbar ends here --------------->
+
+
+
+    <!--------------- hero section starts here --------------->
+    <div class="hero">
+      <div class="header">
+        <h1 class="line anim-typewriter d-flex">Design has many languages</h1>
+      </div>
+    </div>
+    <div class="scroll-down"></div>
+    <br><br>
+    <!--------------- hero section ends here --------------->
+
+
+
+    <!--------------- projects section starts here --------------->
+    <div class="nk-box bg-white" id="projects"></div>
+    <div class="nk-gap-4 mt-5"></div>
+
+    <h2 class="text-center display-5 wow fadeInDown">Meine Ausgewählten Projekte</h2>
+
+    <div class="nk-gap mnt-6"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 offset-lg-4">
+          <div class="text-center wow fadeInUp">Hier ist eine Sammlung meiner besten Arbeiten
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+    </div>
+    <br><br><br>
+    <div class="nk-gap-2 mt-12"></div>
+    <div class="container">
+      <div class="nk-portfolio-list nk-isotope nk-isotope-3-cols">
+        <h2>Illustrationen erstellt in Adobe Illustrator:</h2>
+        <hr>
+        <br><br><br>
+
+
+        <div class="container page-top row">
+
+          <!--gallerie Logos-->
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.4s">
+            <img src="{% static "img/7lamed-logo.jpeg" %}" width="100%">
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.45s">
+            <img src="{% static "img/JOMP_logo.png" %}" width="100%">
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.5s">
+            <img src="{% static "img/lavenci_logo.jpg" %}" width="100%">
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.55s">
+            <img src="{% static "img/redmode_logo.png" %}" width="65%">
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.6s">
+            <img src="{% static "img/logo.png" %}" width="85%">
+          </div>
+
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-4 wow fadeInUp" data-wow-delay="0.65s">
+            <img src="{% static "img/pheonix_logo.jpg" %}" width="120%">
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <!--gallerie Screendesign-->
+    <div class="nk-gap-2 mt-12"></div>
+    <div class="container">
+      <div class="nk-portfolio-list nk-isotope nk-isotope-2-cols">
+        <h2>Screendesigns erstellt in Adobe InDesign:</h2>
+        <hr>
+        <br><br>
+
+
+        <div class="container page-top row">
+          <div class="container page-top row">
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-7 wow fadeInLeft" data-wow-delay="1s">
+              <a href="{% static "img/screendesign_01.pdf" %}" target="_blank"><img src="{% static "img/screendesign_01_thumbnail.jpg" %}" class="screendesign" width="100%"></a>
+              <br>
+              <div class="text-center">Landingpage für Skandinavische Reiseargentur</div>
+            </div>
+
+            <div class="gallery_product col-lg-6 col-md-6 col-sm-6 col-xs-7 wow fadeInRight" data-wow-delay="1.2s">
+              <a href="{% static "img/screendesign_02.pdf" %}" target="_blank"><img src="{% static "img/screendesign_02_thumbnail.jpg" %}" class="screendesign" width="100%"></a>
+              <br>
+              <div class="text-center">Homepage design für Künstler-Management</div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+      </div>
+    </div>
+    <hr>
+
+    <br><br><br>
+    <!--gallerie Fotos-->
+    <div class="nk-gap-2 mt-12"></div>
+    <div class="container">
+      <div class="nk-portfolio-list nk-isotope nk-isotope-2-cols">
+        <h2>Andere Projekte:</h2>
+        <br><br>
+
+
+        <div class="row">
+          <div class="col-lg-12 wow fadeInUp"></div>
+
+          <div class="col-lg-6 wow fadeInRight"><img src="{% static "img/rendering_01.jpg" %}" width="100%"></div>
+          <div class="text">
+            <h3>Archetektur Rendering</h3>
+            <p>Genutzte Software: Blender 3D, Photoshop</p>
+          </div>
+        </div>
+        <br><br><br><br>
+        <div class="row">
+          <div class="col-lg-12"></div>
+          <br>
+          <div class="text">
+            <h3>Street Wear Magazin Cover </h3>
+            <p>Genutzte Software: Lightroom, Photoshop, InDesign</p>
+          </div>
+          <div class="col-lg-6 wow fadeInLeft"><img src="{% static "img/magazin.jpg" %}" width="100%"></div>
+
+          <div class="col-lg-12"></div>
+        </div>
+        <br><br><br>
+        <div class="row">
+          <div class="col-lg-0 wow fadeInUp"></div>
+          <br><br>
+          <div class="col-lg-12 wow fadeInRight"><img src="{% static "img/rendering_02.jpg" %}" width="100%"></div>
+          <div class="text">
+            <br>
+            <h3>Motivational Plakat</h3>
+            <p>Genutzte Software: 3DsMax, Photoshop</p>
+          </div>
+        </div>
+<br><br><br>
+        <div class="row">
+          <div class="col-lg-7 wow fadeInUp"></div>
+          <br>
+          <div class="col-lg-12 wow fadeInRight"><img src="{% static "img/rendering_03.jpg" %}" width="100%"></div>
+          <div class="text">
+            <br>
+            <h3>Lowpoly Wallpaper Flying Islands</h3>
+            <p>Genutzte Software: Blender3D, Photoshop</p>
+          </div>
+        </div>
+<br><br><br>
+        <div class="row">
+          <div class="col-lg-0 wow fadeInUp"></div>
+          <br>
+          <div class="col-lg-12 wow fadeInRight"><img src="{% static "img/rendering_04.jpg" %}" width="100%"></div>
+          <div class="text">
+            <br>
+            <h3>Automobil Rendering und Photoshop</h3>
+            <p>Genutzte Software: Blender3D, Photoshop</p>
+          </div>
+        </div>
+      </div>
+
+      <!--------------- projects section ends here --------------->
+
+
+
+      <!--------------- footer starts here --------------->
+      <div class="footer">
+        <div class="container">
+          <br><br>
+
+          <br>
+
+          <div class="hr">
+            <div class="row"></div>
+          </div>
+
+          <br><br>
+
+          <div class="info">
+            <div class="row">
+
+              <div class="col-lg-4" id="address">
+                <p class="wow fadeInUp" data-wow-delay="0s">Möglichkeit in kontakt zu treten</p>
+                <h4 class="wow fadeInUp" data-wow-delay="0.2s">anton.keller98@hotmail.de</h4>
+                <br><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--------------- footer ends here --------------->
+
+      <br><br><br><br>
+
+    </div>
+
+</body>
+
+</html>

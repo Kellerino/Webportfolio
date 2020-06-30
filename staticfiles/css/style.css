@@ -1,0 +1,105 @@
+/* Box-sizing */
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+/* basic styling */
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Lekton', sans-serif !important;
+      background: #ffff !important;
+      color: #0f0f0f !important;
+}
+
+.anton{
+  margin: 0;
+}
+
+.whitespace {
+  width: 100%;
+  height: 100px;
+}
+
+.navlogo{
+  transition: .2s;
+}
+
+.navlogo:hover{
+  transform: scale(0.7);
+}
+
+@media (max.width: 768px) {
+  .whitespace{
+    display: none;
+  }
+}
+
+.header {
+  margin-top: 500px;
+}
+
+.line {
+  width: 32em;
+  top: 60%;
+  margin: auto;
+  border-right: 2px solid rgba(0,0,0, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.anim-typewriter{
+  animation: typewriter 3s steps(26) 1s 1 normal both,
+  blinkTextCussor 450ms steps(26) infinite normal;
+}
+
+@keyframes typewriter {
+  from{
+    width: 0;
+  }
+  to{
+    width: 12.6em;
+  }
+}
+
+@media (max-width: 768px) {
+    @keyframes typewriter {
+      from{
+        width: 0;
+      }
+      to{
+        width: 12.6em;
+      }
+    }
+}
+
+@keyframes blinkTextCussor {
+  from{
+    border-right-color: rgba(0,0,0,0.75);
+  }
+  to{
+    border-right-color: transparent;
+  }
+}
+
+/*-------projects----------*/
+
+#projects{
+  margin-top: 450px;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+.screendesign{
+  transition: transform .2s;
+}
+
+.screendesign:hover{
+  transform: scale(1.1);
+}
